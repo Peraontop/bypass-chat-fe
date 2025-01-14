@@ -81,7 +81,7 @@ processButton.MouseButton1Click:Connect(function()
 
     -- Transform the text by appending ">" to the last character of each word
     for word in inputText:gmatch("%S+") do
-        local modifiedWord = word:sub(1, #word - 1) .. "<" .. word:sub(#word)
+        local modifiedWord = word:sub(1, #word - 1) .. ">" .. word:sub(#word)
         transformedText = transformedText .. modifiedWord .. " "
     end
 
